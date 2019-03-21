@@ -438,8 +438,6 @@ if($json->is_user_present == 1){
 }
 echo 'Enter OTP : '; 
 $otp = trim(fgets(STDIN)); 
-echo 'Enter refferal : '; 
-$reff = trim(fgets(STDIN)); 
 $random_nama=$nama[mt_rand(0,sizeof($nama)-1)];
 $random_nama2=$nama[mt_rand(0,sizeof($nama)-1)];
 $ch = curl_init();
