@@ -438,8 +438,6 @@ if($json->is_user_present == 1){
 }
 echo 'Enter OTP : '; 
 $otp = trim(fgets(STDIN)); 
-echo 'Enter refferal : '; 
-$reff = trim(fgets(STDIN)); 
 $random_nama=$nama[mt_rand(0,sizeof($nama)-1)];
 $random_nama2=$nama[mt_rand(0,sizeof($nama)-1)];
 $ch = curl_init();
@@ -458,7 +456,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, '{
 	"name": "'.$random_nama.' '.$random_nama2.'",
 	"phone": "'.$phone_number.'",
 	"push_type": "gcm",
-	"referral_code": "'.$reff.'",
+	"referral_code": "HADRR93QW",
 	"token": "c-PeIXwYYwg:APA91bHHQLHnS0FvSIOYJpN-hBJXYHxc1xQh8FrMZaQawBVPVyXxk77vTz7LWC4rtApBrZb3p4pOwJRD2JBMq0u3sChUgpasQFGcN_HNAGCscrcREwL-trFIBX3votCcFY1bn7eBmuCd",
 	"updated_at": 0
 }');
